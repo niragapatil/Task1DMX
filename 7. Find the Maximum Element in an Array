@@ -1,0 +1,7 @@
+a = [1, 2, 3, 4, 5]
+max = a[0]
+for elem in a:
+    if elem > max:
+        max = elem
+print(max)
+    

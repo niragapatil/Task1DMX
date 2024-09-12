@@ -1,7 +1,13 @@
-a = [1, 2, 3, 4, 5]
-max = a[0]
-for elem in a:
-    if elem > max:
-        max = elem
-print(max)
-    
+
+from typing import List
+
+
+class Solution:
+    def largest(self, arr : List[int]) -> int:
+        maximum = arr[0]
+        for elem in arr:
+            if elem > maximum:
+                maximum = elem
+        return(maximum)
+        
+

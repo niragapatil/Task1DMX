@@ -1,3 +1,6 @@
-a = [1, 2, 3, 4, 5]
-for elem in a:
-    print(elem)
+#User function Template for python3
+class Solution:
+    # Just print the space seperated array elements
+	def printArray(self, arr):
+	    for elem in arr:
+            print(elem, end=" ")

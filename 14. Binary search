@@ -1,0 +1,15 @@
+#User function template for Python
+
+class Solution:
+    def binarysearch(self, arr, k):
+        minn, maxx = 0, len(arr) - 1
+
+        while minn <= maxx:
+            mid = (minn + maxx) // 2
+            if arr[mid] == k:
+                return mid
+            elif arr[mid] < k:
+                minn = mid + 1
+            else:
+                maxx = mid - 1
+        return -1
